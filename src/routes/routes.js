@@ -2,15 +2,15 @@ import { Router } from "express";
 const router = Router();
 
 router.get("/", (req, res) => {
-  res.render("index", {title: 'bmo website'});
+  res.render("index");
 });
 
 router.get("/about", (req, res) => {
-  res.render("about", {title: 'about bmo'});
+  res.render("about");
 });
 
 router.get("/contact", (req, res) => {
-  res.render("contact", {title: 'contact bmo'});
+  res.render("contact");
 });
 
 export default router;
